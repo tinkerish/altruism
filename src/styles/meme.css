@@ -1,0 +1,11 @@
+.irregular-recipe-wrapper{
+    background: no-repeat url("../assets/distort_circle.png");
+    background-position: top;
+    background-size: cover;
+}
+.radial-backg{
+    background: radial-gradient(circle farthest-corner at right center, #62A5AB 26%, #73B3B9 47%, #62A5AB 69%, #4A8E96 100%);
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+}

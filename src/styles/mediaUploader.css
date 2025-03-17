@@ -1,0 +1,41 @@
+@property --progress {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+.progress-bar {
+  --bar-width: 8px;
+  width: 90%;
+  aspect-ratio: 1/1;
+  font-size: 0.6rem;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(blue var(--progress), rgb(155, 155, 155) 0%);
+  transition: --progress 0.5s linear;
+  &::after {
+    content: attr(aria-valuenow) "%";
+    display: grid;
+    place-items: center;
+    width: calc(100% - var(--bar-width));
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 50%;
+    color: blue;
+    background: white;
+  }
+}
+.progress-bar[aria-valuenow="100"] {
+  &::after {
+    animation: animate-progress 0s forwards;
+    animation-delay: 1000ms;
+  }
+}
+@keyframes animate-progress {
+  to {
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCA4MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTM1LjQyMzcgNTMuNzMyN0w2Ny45Nzg3IDIxLjE3NzdMNzIuOTg5NSAyNi4xODQyTDM1LjQxOTUgNjMuNzVMMTIuODg2IDQxLjIxMjJMMTcuODkyNSAzNi4yMDE1TDM1LjQyMzcgNTMuNzMyN1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=");
+    background-color: var(--progress-color);
+  }
+}

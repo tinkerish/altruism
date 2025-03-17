@@ -1,0 +1,23 @@
+.food-design{
+    height: 24vw;
+    max-height: 23rem;
+    position: relative;
+}
+.food-design span{
+    width: 100%;
+    height: 100%;
+    background: url("../assets/testimonials.svg") repeat-x top / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0px, -1.77628px, 0px);
+}
+.food-design span::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../assets/testimonials-lines.svg") repeat-x top / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

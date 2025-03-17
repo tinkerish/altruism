@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+:root {
+  font-family: "Merriweather", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #fdd901; */
+  --background: #3ea0a9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[data-theme='dark'] {
+  --background: #1c484d;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+html{
+  background: var(--background);
+}
+.file-loader{
+  border: 26px solid #f3f3f3;
+  border-top: 26px solid #db712a;
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  animation: spin-loader 2s linear infinite;
+}
+@keyframes spin-loader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

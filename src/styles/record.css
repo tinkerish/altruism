@@ -1,0 +1,35 @@
+.mic-button {
+  /* width: 2%;
+  height: 2rem; */
+  border: none;
+
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  display: flex;
+  padding: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  transition: background-color 0.3s ease;
+}
+
+.mic-button.recording {
+  background-color: green;
+  animation: micPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* .mic-button i {
+  font-size: 24px;
+  color: white;
+  pointer-events: none;
+} */
+@keyframes micPulse {
+  0%,
+  100% {
+    background-color: green;
+  }
+  50% {
+    background-color: rgba(0, 128, 0, 0.7);
+  }
+}

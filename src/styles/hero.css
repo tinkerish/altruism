@@ -1,0 +1,20 @@
+.polygon-shape{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 100% 94.35%, 95.27% 96.38%, 90.22% 97.5%, 84.97% 97.93%, 79.58% 97.87%, 74.14% 97.51%, 68.69% 96.97%, 63.3% 96.4%, 58% 95.87%, 52.83% 95.48%, 47.82% 95.25%, 42.97% 95.23%, 38.3% 95.41%, 33.82% 95.78%, 29.52% 96.29%, 25.39% 96.88%, 21.43% 97.48%, 17.62% 97.98%, 13.93% 98.27%, 10.35% 98.22%, 6.86% 97.66%, 3.41% 96.43%, 0% 94.35%, 0% 100%);
+    background: #4A8E96;
+    background: radial-gradient(circle farthest-corner at right center, #62A5AB 26%, #73B3B9 47%, #62A5AB 69%, #4A8E96 100%);
+
+}
+.floating-image{
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

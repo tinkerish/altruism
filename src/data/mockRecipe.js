@@ -1,0 +1,77 @@
+export const mockRecipe = [
+  {
+    id: 1,
+    name: "Classic Margherita Pizza",
+    dietType: "Vegetarian",
+    image: "https://example.com/margherita-pizza.jpg",
+    ingredients: [
+      "2 cups all-purpose flour",
+      "1 cup water",
+      "1/2 tsp yeast",
+      "2 tbsp olive oil",
+      "Fresh basil leaves",
+      "200g mozzarella cheese",
+      "1/2 cup tomato sauce",
+    ],
+    owner: "Chef Maria",
+    recipe:
+      "Mix flour, water, and yeast to form a dough. Let it rise for 1 hour. Roll the dough, add tomato sauce, cheese, and basil. Bake for 15 minutes at 220°C.",
+    video: "https://example.com/margherita-pizza-video.mp4",
+    servings: 2,
+    cookTime: "30 minutes",
+    difficulty: "Easy",
+    description:
+      "A simple and delicious classic Margherita pizza recipe that's perfect for family dinners.",
+    rating: 4.5,
+  },
+  {
+    id: 2,
+    name: "Grilled Chicken Salad",
+    dietType: "Non-Vegetarian",
+    image: "https://example.com/grilled-chicken-salad.jpg",
+    ingredients: [
+      "200g chicken breast",
+      "1 cup mixed greens",
+      "1/2 cup cherry tomatoes",
+      "1/4 cup sliced cucumber",
+      "2 tbsp olive oil",
+      "Lemon juice",
+      "Salt and pepper to taste",
+    ],
+    recipe:
+      "Grill the chicken breast until cooked through. Toss mixed greens, tomatoes, cucumber, and grilled chicken in a bowl. Drizzle olive oil and lemon juice, and season with salt and pepper.",
+    video: "https://example.com/grilled-chicken-salad-video.mp4",
+    servings: 1,
+    owner: "Chef John",
+    cookTime: "20 minutes",
+    difficulty: "Medium",
+    description:
+      "A healthy and light grilled chicken salad perfect for lunch or a quick dinner.",
+    rating: 4.8,
+  },
+  {
+    id: 3,
+    name: "Vegan Tacos",
+    dietType: "Vegan",
+    image: "https://example.com/vegan-tacos.jpg",
+    ingredients: [
+      "6 small corn tortillas",
+      "1 cup black beans",
+      "1 avocado",
+      "1/2 cup salsa",
+      "1/4 cup chopped cilantro",
+      "1 lime, juiced",
+      "1/2 tsp cumin",
+    ],
+    recipe:
+      "Warm the tortillas. Mash avocado and mix with lime juice and cumin. Fill tortillas with black beans, avocado mixture, salsa, and cilantro.",
+    video: "https://example.com/vegan-tacos-video.mp4",
+    servings: 3,
+    owner: "Chef Lisa",
+    cookTime: "15 minutes",
+    difficulty: "Easy",
+    description:
+      "Tasty vegan tacos packed with flavor, easy to make, and perfect for a quick meal.",
+    rating: 4.7,
+  },
+];

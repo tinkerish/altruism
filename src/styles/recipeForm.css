@@ -1,0 +1,9 @@
+.rsw-ce ul {
+    list-style: disc !important;
+    padding-left: 2em  !important;
+  }
+  
+  .rsw-ce ol {
+    list-style: decimal  !important;
+    padding-left: 2em  !important;
+  }

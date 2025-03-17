@@ -1,0 +1,17 @@
+.irregular-wrapper{
+    background: no-repeat center url("../assets/distort_circle.png");
+    background-size: contain;
+}
+.slider-path{
+    background: repeat-x center url("../assets/sliders-path-1.png");
+    /* background-size: contain; */
+}
+.glowy-wrapper {
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 50%; /* Keeps it smooth */
+  }
+  
+  .glowy-wrapper:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); /* White glow on hover */
+  }
+  

@@ -1,0 +1,30 @@
+.masking {
+  position: relative;
+  line-height: 1;
+}
+.animate-overlay {
+  animation: opaqueness 0.3s ease-in-out;
+}
+.animate-modal {
+  animation: modal 0.3s linear;
+}
+.animate-modal:focus{
+  outline: -webkit-focus-ring-color auto 1px;
+}
+@keyframes opaqueness {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal {
+  0% {
+    transform: translate(0%, -60%);
+  }
+  100% {
+    transform: translateY(0%, -50%);
+  }
+}
